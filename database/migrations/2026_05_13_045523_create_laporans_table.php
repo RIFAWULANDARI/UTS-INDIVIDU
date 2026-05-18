@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nama_pelapor');
             $table->string('jenis_masalah');
             $table->string('lokasi');
-            $table->text('deskripsi');
+            $table->text('deskripsi')->nullable();
             $table->string('status');
             $table->timestamps();
         });
